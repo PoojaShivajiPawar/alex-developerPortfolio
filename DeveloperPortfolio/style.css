@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(1, 0, 4);
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(15, 12, 68);
+    color: white;
+position: relative;
+width: 100vw;    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color:skyblue;
+}
+
+.left{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.left:hover{
+    color: rgb(227, 124, 79);
+}
+
+.firstSection{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.firstSection > div{
+    width: 40%;
+    margin-top: 2px;
+    display: inline;
+}
+
+.leftSection{
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.leftSection button{
+border:2px solid white;
+background-color: rgb(33, 33, 52);
+color: white;
+font-size: 15px;
+padding: 10px;
+border-radius: 5px;
+margin:25px 0;
+}
+
+.leftSection button:hover{
+    cursor: pointer;
+    color: bisque;
+}
+.rightSection img{
+    margin-top: 40px;
+}
+.purple{
+    color: purple;
+    font-size: 80px;
+}
+#element{
+    color: blueviolet;
+}
+hr{
+
+    height: 1px;
+    margin: 20px 60px;
+}
+.secondSection {
+    max-width: 90vw;
+    margin-left: auto;
+    height: 70vh;
+}
+.text-grey{
+color: grey;
+margin-bottom: 2px;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.secondSection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondSection .vertical{
+display: flex;
+flex-direction: row;
+height: 93px;
+width: 1px;
+background-color: white;
+margin: 0 100px;
+
+}
+.secondSection .image-top{
+width: 25px;
+height: 30px;
+position: relative;
+top: -40px;
+left: -15px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: grey;
+    width: 170px;
+    font-size: 11px;
+}
+footer{
+    background-color: rgb(45, 31, 45);
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+.footer ul {
+    list-style: none;
+}
+.footer > div{
+    width: 223px;
+}
+footer .footer-rights{
+text-align: center;
+color: grey;
+padding: 12px;
+}
+@media only screen and (max-width: 600px) {
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 270vw;
+        padding: 20px;
+    }  
+    .firstSection{
+    width: 250vw;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .firstSection > div{
+        width: fit-content;
+        text-align: center;
+    }
+    
+    hr{
+        width: 230vw;
+        margin: 20px 50px;
+    }
+    .secondSection {
+        max-width: 90vw;
+        margin-left: auto;
+        height: 110vh;
+    }
+    
+    .secondSection .box{
+        background: white;
+        width: 240vw;
+       
+    }
+   
+    footer{
+        width: fit-content;
+    }
+    
+  }
